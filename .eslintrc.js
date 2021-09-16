@@ -16,5 +16,12 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'node/no-callback-literal': 'off',
+    'import/no-unresolved': 'off',
+    'no-callback-literal': 0,
+    'max-len': 0,
+    'no-console': 'off',
+    semi: 'off',
+  }
 }
