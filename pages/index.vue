@@ -22,6 +22,7 @@ export default {
       input2: '请输入内容',
     }
   },
+  
   methods: {
     bindToAbout() {
       this.$router.push('/about')
