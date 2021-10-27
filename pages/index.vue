@@ -19,10 +19,10 @@ export default {
   data() {
     return {
       input: '',
-      input2: '请输入内容',
+      input2: '',
     }
   },
-  
+
   methods: {
     bindToAbout() {
       this.$router.push('/about')
@@ -39,6 +39,7 @@ export default {
     open() {
       this.$alert('这是一段内容', '标题名称', {
         confirmButtonText: '确定',
+        cancelButtonText: '取消',
         callback: (action) => {
           this.$message({
             type: 'info',
@@ -50,7 +51,6 @@ export default {
     open1() {
       this.$prompt('请输入邮箱', '提示', {
         confirmButtonText: '确定',
-        cancelButtonText: '取消',
         inputPattern:
           /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/,
         inputErrorMessage: '邮箱格式不正确',
